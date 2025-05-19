@@ -1,9 +1,14 @@
+body, button, input, select, textarea {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: rgb(255, 255, 255);
     color: #b1001a;
 }
+
 
 .container {
     max-width: 1200px;
@@ -12,12 +17,39 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
     color: #b1001a;
 }
 
 h1 {
     text-align: center;
     color: #333;
+}
+
+#h1first, .hero-content h1, .main-title {
+    font-size: 2.7em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #000000;
+    text-shadow: 2px 4px 16px rgba(0,0,0,0.10), 0 2px 0 #fff;
+    margin-bottom: 0.3em;
+    line-height: 1.1;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+#Welcome {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;   /* Normal bold */
+    font-style: normal;
+    font-size: 2.7em;
+    letter-spacing: 2px;
+    color: #b1001a;
+    text-align: center;
+    margin-bottom: 0.3em;
+    line-height: 1.1;
 }
 
 .registration-button {
@@ -90,11 +122,13 @@ h1 {
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 8px rgba(177,0,26,0.15);
     font-weight: bold;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 .register-btn:hover {
-    background: #ff0033;
-    color: #fff;
+    background: red;
+    color: #000000;
     box-shadow: 0 4px 16px rgba(177,0,26,0.25);
 }
 
@@ -305,12 +339,14 @@ form input:focus {
 .top-right-college {
     width: 120px;
     height: auto;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-    border-radius: 5px;
+    border-radius: 0;
 }
 
 /* Responsive for mobile */
 @media (max-width: 600px) {
+    #h1first, .hero-content h1, .main-title {
+        font-size: 1.5em;
+    }
     .top-right-images {
         top: 8px;
         right: 8px;
@@ -433,6 +469,7 @@ html, body {
     overflow-x: hidden;
 }
 
+
 /* Ensure images and sections never overflow */
 img, svg {
     max-width: 100%;
@@ -454,4 +491,9 @@ main, .about, .details-below-main, .sponsors-section {
 
 .hero-content .highlight {
     color: #000000 !important;/* ai conclave colour */
+}
+.p .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
