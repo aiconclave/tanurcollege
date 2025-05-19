@@ -7,14 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openMenu && closeMenu && sideMenu) {
         openMenu.onclick = function() {
             sideMenu.style.width = '270px';
+            openMenu.style.display = 'none'; // Hide the menu icon
         };
         closeMenu.onclick = function() {
             sideMenu.style.width = '0';
+            openMenu.style.display = 'inline-block'; // Show the menu icon again
         };
         // Optional: close menu when clicking outside
         window.addEventListener('click', function(event) {
             if (event.target === sideMenu) {
                 sideMenu.style.width = '0';
+                openMenu.style.display = 'inline-block'; // Show the menu icon again
             }
         });
     }
@@ -50,3 +53,4 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
