@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Conclave</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="top-right-images">
+        <img src="images/logo copy.jpg" alt="College" class="top-right-college">
+        <img src="images/college.jpg" alt="Logo" class="top-right-logo">
+    </div>
+
+
+    <!-- Sliding Menu -->
+    <nav id="sideMenu" class="side-menu">
+        <span class="closebtn" id="closeMenu">&times;</span>
+        <ul>
+            <li><strong>Location</strong><br>Government College, Tanur</li>
+            <li>
+                <strong>Details</strong><br>
+                June 26, 27, 2025<br>AI Conclave - Explore the Future of AI
+                <br>
+                
+            </li>
+            <li>
+                <strong>More Information</strong><br>
+                Opening: Dr R Bindu, Minister for Higher Education and Social Justice<br>
+                Closing: V Abdurahiman, Minister for Sports, Wakf, and Haj
+            </li>
+        </ul>
+    </nav>
+    <span class="menu-icon" id="openMenu">
+        <!-- Changed to a robot SVG icon -->
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <rect x="4" y="8" width="16" height="10" rx="3" fill="#b1001a"/>
+            <rect x="9" y="2" width="6" height="4" rx="2" fill="#b1001a"/>
+            <circle cx="7" cy="13" r="1.5" fill="#fff"/>
+            <circle cx="17" cy="13" r="1.5" fill="#fff"/>
+            <rect x="11" y="16" width="2" height="2" rx="1" fill="#fff"/>
+        </svg>
+    </span>
+    <!-- End Sliding Menu -->
+
+    <header class="hero"> <!--main image -->
+        <img src="https://msftstories.thesourcemediaassets.com/sites/677/2024/12/ai-updated.jpg" alt="Artificial Intelligence Banner" class="hero-img">
+        <div class="hero-content">
+            <h1>Welcome to <span class="highlight">AI Conclave</span></h1>
+            <p>Join the future of Artificial Intelligence</p>
+            <button id="registerButton" class="register-btn" onclick="window.open('https://forms.gle/hJK46LUDqCv85NFX6','_blank')">REGISTER NOW</button>
+            <!-- Add this inside your .hero-content div, below the existing Register Now button -->
+            <button id="registerSpecialButton" class="register-btn" style="margin-top: 0.7em;" onclick="window.open('https://forms.gle/AS2dKRkgLe4Hnkdd8','_blank')">
+                WORKSHOPS    
+            </button>
+        </div>
+    </header>
+    <main
+        style="
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+            margin: 2em auto;   
+            max-width: 900px;
+            position: relative;
+            z-index: 1;
+        "
+    >
+        <!-- Decorative AI images behind main content -->
+        <div class="main-bg-images">
+            <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="AI Circuit" class="main-bg-img main-bg-img1">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="AI Brain" class="main-bg-img main-bg-img2">
+        </div>
+        <section class="about">
+            <h2>EXPLORE THE FUTURE OF AI</h2>
+            <h3>ARTIFICIAL INTELLIGENCE CONCLAVE</h3>
+            <p><strong>2025 JUNE 26, 27<br>GOVERNMENT COLLEGE, TANUR</strong></p>
+            <hr>
+            <h3>OPENING CEREMONY</h3>
+            <p><strong>INAUGURATION</strong><br>
+            DR R BINDU<br>
+            MINISTER FOR HIGHER EDUCATION AND SOCIAL JUSTICE</p>
+            <hr>
+            <h3>CLOSING CEREMONY</h3>
+            <p><strong>INAUGURATION</strong><br>
+            V ABDURAHIMAN<br>
+            MINISTER FOR SPORTS, WAKF, AND HAJ</p>
+        </section>
+        <!-- Add poster image before Event Highlights -->
+        <div style="text-align:center; margin: 2em 0;">
+            <img src="images/poster1.jpg" alt="AI Conclave Poster" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 16px rgba(0,0,0,0.10);">
+        </div>
+        <!-- Details section below main -->
+        <section class="details-below-main">
+            <h2>Event Highlights</h2>
+            <ul>
+                <li>Workshops on AI and Machine Learning</li>
+                <li>Expert Talks and Panel Discussions</li>
+                <li>Student Project Expo</li>
+                <li>Networking Sessions</li>
+                <li>Hands-on Demos</li>
+                <li>And much more!</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Register for AI Conclave</h2>
+            <form id="registrationForm">
+                <!-- Form fields here -->
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer with Social Links -->
+    <footer class="footer-social">
+        <div class="social-links">
+            <a href="https://www.instagram.com/ai_conclave25?igsh=eTNsdXF1dzJ4Njcy" target="_blank" aria-label="Instagram">
+                <!-- Updated Instagram SVG Icon -->
+                <svg width="32" height="32" viewBox="0 0 448 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="448" height="512" rx="90" fill="#fff"/>
+                    <radialGradient id="ig-gradient" cx="0.5" cy="0.5" r="0.8">
+                        <stop offset="0%" stop-color="#feda75"/>
+                        <stop offset="30%" stop-color="#fa7e1e"/>
+                        <stop offset="60%" stop-color="#d62976"/>
+                        <stop offset="90%" stop-color="#962fbf"/>
+                        <stop offset="100%" stop-color="#4f5bd5"/>
+                    </radialGradient>
+                    <path d="M224 144c-44.2 0-80 35.8-80 80s35.8 80 80 80 80-35.8 80-80-35.8-80-80-80zm0 132c-28.7 0-52-23.3-52-52s23.3-52 52-52 52 23.3 52 52-23.3 52-52 52zm146.4-136c0 10.7-8.7 19.4-19.4 19.4s-19.4-8.7-19.4-19.4 8.7-19.4 19.4-19.4 19.4 8.7 19.4 19.4zm76.1 19.6c-1.7-35.3-9.9-66.7-36.2-92.9S371.3 1.7 336 0C300.7-1.7 269.3 6.5 243.1 32.8S192 76.7 192 112c1.7 35.3 9.9 66.7 36.2 92.9S147.3 510.3 112 512c-35.3 1.7-66.7-6.5-92.9-32.8S1.7 371.3 0 336c-1.7-35.3 6.5-66.7 32.8-92.9S76.7 192 112 192c35.3-1.7 66.7-9.9 92.9-36.2S510.3 147.3 512 112c1.7-35.3-6.5-66.7-32.8-92.9S371.3 1.7 336 0zm-48 32c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm-176 0c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z" fill="url(#ig-gradient)"/>
+                </svg>
+            </a>
+            
+            <a href="mailto:aiconclave25@gmail.com" aria-label="Gmail">
+                <!-- Email SVG Icon -->
+                <svg width="32" height="32" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="512" height="512" rx="100" fill="#fff"/>
+                    <path d="M502.3 190.8l-192-160c-21.4-17.8-52.2-17.8-73.6 0l-192 160C7.1 197.8 0 211.1 0 224.9V432c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V224.9c0-13.8-7.1-27.1-21.7-34.1zM464 432c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256l208 166.4c12.5 10 30.5 10 43 0L480 256v176zm-208-112L64 224.9V80c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v144.9l-192 95.1z" fill="#EA4335"/>
+            </svg>
+        </a>
+        </div>
+        <div class="copyright">
+            <span style="font-size:1.1em; color:#888;">
+                &copy; 2025 AI Conclave. All rights reserved.
+            </span>
+        </div>
+        <div class="credit" style="margin-top:0.5em; text-align:center;">
+            <a href="https://www.instagram.com/resaunion?igsh=YXhwOGZzd2h2NXpu" target="_blank" style="text-decoration:none; color:#222; display:inline-flex; align-items:center; gap:6px;">
+                <svg width="20" height="20" viewBox="0 0 448 512" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+                    <rect width="448" height="512" rx="90" fill="#fff"/>
+                    <radialGradient id="ig-credit-gradient" cx="0.5" cy="0.5" r="0.8">
+                        <stop offset="0%" stop-color="#feda75"/>
+                        <stop offset="30%" stop-color="#fa7e1e"/>
+                        <stop offset="60%" stop-color="#d62976"/>
+                        <stop offset="90%" stop-color="#962fbf"/>
+                        <stop offset="100%" stop-color="#4f5bd5"/>
+                    </radialGradient>
+                    <path d="M224 144c-44.2 0-80 35.8-80 80s35.8 80 80 80 80-35.8 80-80-35.8-80-80-80zm0 132c-28.7 0-52-23.3-52-52s23.3-52 52-52 52 23.3 52 52-23.3 52-52 52zm146.4-136c0 10.7-8.7 19.4-19.4 19.4s-19.4-8.7-19.4-19.4 8.7-19.4 19.4-19.4 19.4 8.7 19.4 19.4zm76.1 19.6c-1.7-35.3-9.9-66.7-36.2-92.9S371.3 1.7 336 0C300.7-1.7 269.3 6.5 243.1 32.8S192 76.7 192 112c1.7 35.3 9.9 66.7 36.2 92.9S147.3 510.3 112 512c-35.3 1.7-66.7-6.5-92.9-32.8S1.7 371.3 0 336c-1.7-35.3 6.5-66.7 32.8-92.9S76.7 192 112 192c35.3-1.7 66.7-9.9 92.9-36.2S510.3 147.3 512 112c1.7-35.3-6.5-66.7-32.8-92.9S371.3 1.7 336 0zm-48 32c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm-176 0c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z" fill="url(#ig-credit-gradient)"/>
+                </svg>
+                Visit our instagram
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
